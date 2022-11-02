@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+*
+
+{
+	margin:  0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	font-size: 21px;
+}
+
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #181E1A;
+}
+
+
+ul
+{
+	position: relative;
+	transform: skewY(-15deg);
+}
+
+ul li
+{
+	position: relative;
+	list-style: none;
+	width: 200px;
+	background: #3e3f46;
+	padding: 15px;
+	z-index: var(--i);
+	transition: 0.5s;
+}
+
+ul li:hover
+{
+	background: rgb(49, 141, 49);
+	transform: translateX(30px);
+}
+
+ul li::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -40px;
+	width: 40px;
+	height: 100%;
+	background: #2e3133;
+	transform-origin: right;
+	transform: skewY(45deg);
+	transition: 0.5s;*/
+}
+
+ul li:hover::before
+{
+	background: rgb(62, 206, 62);
+}
+
+ul li::after
+{
+	content: '';
+	position: absolute;
+	top: -40px;
+	left: 0;
+	width: 100%;
+	height: 40px;
+	background: #35383e;
+	transform-origin: bottom;
+	transform: skewX(45deg);
+	transition: 0.5s;
+}
+
+ul li:hover::after
+{
+	background: rgb(105, 238, 105);
+}
+
+ul li a
+{
+	text-decoration: none;
+	color: #999;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	transition: 0.5s;
+}
+
+ul li:hover a
+{
+	color: #fff;
+}
+
+ul li:Last-child::after
+{
+	box-shadow: -120px 120px 20px rgba(0, 0, 0, 0.8);
+}
+
+
+.page-container {
+   padding: 20px 10px;
+   width: 100%;
+   max-width: 650px;
+   margin: auto;
+   text-align: left;
+   background-color: white;
+   
+}
+
+.parallax {
+   
+}
+
+.hero2 {
+   width: 80%;
+   height: 404px;
+   position: relative;
+   display: flex;
+   align-items: center; 
+   position: absolute;
+   top: 200%;
+   left: 10%; 
+}
+
+.hero2 .content {
+
+   font-family: 'Poppins', sans-serif;
+   color: white;
+   text-align: left;
+   margin-left: 10%;
+}
+
+.hero2 .content button {
+   background-color: transparent;
+   border: 1px solid green;
+   color: green;
+   padding: 12px 20px;
+   font-family: poppins;
+   font-size: 16px;
+   margin-top: 20px;
+   min-width: 200px;
+   transition: 0.5s;
+   cursor: pointer;
+}
+
+.hero2 .content button:hover {
+   background-color: green;
+   color: #181E1A;
+   transition: 0.5s;
+  
+}
+
+.rellax {
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500px;
+}
+
